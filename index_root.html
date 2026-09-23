@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Cartão Kazzu Azzee | Credsystem</title>
+<meta name="description" content="Portal de orientações do Cartão Kazzu Azzee para colaboradores.">
+<style>
+:root{
+  --blue:#075aa9;
+  --blue2:#0b73c7;
+  --red:#e51d2a;
+  --dark:#18202a;
+  --muted:#667085;
+  --bg:#f5f7fa;
+  --white:#fff;
+  --line:#e5e7eb;
+  --shadow:0 10px 30px rgba(20,40,70,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#1f2937}
+a{text-decoration:none;color:inherit}
+.topbar{background:#fff;border-bottom:1px solid var(--line);padding:10px 18px}
+.topbar-inner{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logos{display:flex;align-items:center;gap:16px}
+.logo-kazzu{height:54px;width:54px;object-fit:contain;border-radius:10px}
+.logo-cred{height:42px;width:180px;object-fit:contain}
+.brand-divider{height:38px;width:1px;background:#ddd}
+.nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:#475467}
+.nav a:hover{color:var(--blue)}
+.hero{background:linear-gradient(135deg,#064e91,#0b73c7);color:#fff}
+.hero-inner{max-width:1180px;margin:auto;padding:38px 18px;display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
+.hero h1{font-size:clamp(30px,4vw,48px);margin:0 0 12px}
+.hero p{font-size:18px;line-height:1.6;margin:0 0 22px;max-width:680px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:12px;font-weight:700}
+.btn-white{background:#fff;color:var(--blue)}
+.btn-outline{border:1px solid rgba(255,255,255,.7);color:#fff}
+.hero-banner{background:#fff;border-radius:18px;padding:8px;box-shadow:0 15px 40px rgba(0,0,0,.18)}
+.hero-banner img{display:block;width:100%;border-radius:12px}
+.vertical-banner{display:none}
+.container{max-width:1180px;margin:auto;padding:30px 18px}
+.section-title{margin:0 0 7px;font-size:28px}
+.section-subtitle{margin:0 0 20px;color:var(--muted)}
+.notice{background:#fff;border-left:5px solid var(--red);padding:20px;border-radius:14px;box-shadow:var(--shadow);margin-bottom:24px}
+.notice strong{color:var(--red)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:21px;box-shadow:0 5px 18px rgba(20,40,70,.06);transition:.18s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.icon{font-size:28px;margin-bottom:12px}
+.card h3{margin:0 0 8px;font-size:18px}
+.card p{margin:0;color:var(--muted);line-height:1.5;font-size:14px}
+.materials{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.material{background:#fff;border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+.material img{width:100%;display:block;border-radius:12px}
+.material h3{margin:0 0 12px}
+.support{margin-top:30px;background:#19212b;color:#fff;border-radius:18px;padding:25px}
+.support h2{margin-top:0}
+footer{margin-top:35px;background:#fff;border-top:1px solid var(--line);padding:25px 18px;text-align:center;color:#667085;font-size:13px}
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .hero-banner{display:none}
+  .vertical-banner{display:block;background:#fff;border-radius:18px;padding:8px;max-width:390px;margin:auto}
+  .vertical-banner img{display:block;width:100%;border-radius:12px}
+}
+@media(max-width:600px){
+  .topbar-inner{align-items:flex-start;flex-direction:column}
+  .nav{gap:10px}
+  .logo-cred{width:145px;height:36px}
+  .brand-divider{height:32px}
+  .hero-inner{padding:30px 18px}
+  .hero p{font-size:16px}
+  .grid{grid-template-columns:1fr}
+  .materials{grid-template-columns:1fr}
+  .container{padding-top:24px}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="logos">
+      <img class="logo-kazzu" src="logo-kazzu.jpg" alt="Kazzu Azzee">
+      <div class="brand-divider"></div>
+      <img class="logo-cred" src="logo-credsystem.jpg" alt="Credsystem">
+    </div>
+    <nav class="nav">
+      <a href="#orientacoes">Orientações</a>
+      <a href="#materiais">Materiais</a>
+      <a href="#suporte">Suporte</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div style="font-weight:700;letter-spacing:.4px;margin-bottom:10px">PORTAL DE ORIENTAÇÕES</div>
+      <h1>Cartão Kazzu Azzee</h1>
+      <p>Um espaço criado para apoiar os colaboradores das lojas Kazzu Azzee nos processos, orientações e materiais relacionados ao Cartão.</p>
+      <div class="hero-actions">
+        <a class="btn btn-white" href="#orientacoes">Ver orientações</a>
+        <a class="btn btn-outline" href="#materiais">Ver materiais</a>
+      </div>
+    </div>
+    <div class="hero-banner">
+      <img src="banner-cartao-horizontal.png" alt="Material promocional do Cartão Kazzu Azzee">
+    </div>
+    <div class="vertical-banner">
+      <img src="banner-cartao-vertical.png" alt="Material promocional do Cartão Kazzu Azzee">
+    </div>
+  </div>
+</section>
+
+<main class="container">
+  <section class="notice">
+    <strong>📢 COMUNICADOS</strong>
+    <p style="margin:8px 0 0">Este espaço será utilizado para divulgar atualizações importantes sobre processos, operação e atendimento do Cartão Kazzu Azzee.</p>
+  </section>
+
+  <section id="orientacoes">
+    <h2 class="section-title">Encontre o que precisa</h2>
+    <p class="section-subtitle">Orientações rápidas para a rotina das lojas.</p>
+
+    <div class="grid">
+      <article class="card"><div class="icon">💳</div><h3>Cartão Kazzu Azzee</h3><p>Conheça o cartão e as principais orientações para apresentar a solução ao cliente.</p></article>
+      <article class="card"><div class="icon">📝</div><h3>Proposta</h3><p>Confira o fluxo para realizar corretamente a proposta e conferir os dados do cliente.</p></article>
+      <article class="card"><div class="icon">✅</div><h3>Aprovação</h3><p>Entenda as orientações relacionadas à análise e ao retorno da proposta.</p></article>
+      <article class="card"><div class="icon">📲</div><h3>Ativação</h3><p>Veja os passos necessários após a emissão do cartão.</p></article>
+      <article class="card"><div class="icon">💰</div><h3>Pagamento</h3><p>O pagamento do Cartão Kazzu Azzee deve ser realizado pelos canais digitais disponibilizados.</p></article>
+      <article class="card"><div class="icon">🖥️</div><h3>SISTEC</h3><p>Consulte as atualizações do processo e as regras para disponibilização das opções no sistema.</p></article>
+      <article class="card"><div class="icon">📱</div><h3>App e Websystem</h3><p>Orientações sobre os canais digitais utilizados pelo cliente para consultar e pagar o cartão.</p></article>
+      <article class="card"><div class="icon">❓</div><h3>Dúvidas frequentes</h3><p>Uma área para reunir as principais perguntas e respostas da operação.</p></article>
+    </div>
+  </section>
+
+  <section id="materiais" class="materials">
+    <div class="material">
+      <h3>Material para divulgação — Horizontal</h3>
+      <img src="banner-cartao-horizontal.png" alt="Banner horizontal Cartão Kazzu Azzee">
+    </div>
+    <div class="material">
+      <h3>Material para divulgação — Totem</h3>
+      <img src="banner-cartao-vertical.png" alt="Banner vertical Cartão Kazzu Azzee">
+    </div>
+  </section>
+
+  <section id="suporte" class="support">
+    <h2>🆘 Precisa de ajuda?</h2>
+    <p>Em caso de dúvidas sobre a operação, consulte as orientações deste portal ou acione o responsável pelo processo na sua loja.</p>
+    <p style="margin-bottom:0"><strong>Kazzu Azzee + Credsystem</strong><br>Juntos para apoiar a evolução da operação.</p>
+  </section>
+</main>
+
+<footer>
+  Cartão Kazzu Azzee | Credsystem<br>
+  Portal de Orientações para colaboradores
+</footer>
+</body>
+</html>
